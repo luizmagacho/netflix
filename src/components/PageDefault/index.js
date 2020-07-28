@@ -10,22 +10,19 @@ const Main = styled.main`
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
-  `;
+`;
 
-function PageDefault(props){
-  return(
 
+function PageDefault({ children }) {
+  return (
     <>
-      <Menu/>
-      <Main>
-        {props.children}
-      </Main>
-
-      <Footer/>
+      <Menu />
+        <Main>
+          {children}
+        </Main>
+      <Footer />
     </>
-
   );
-
 }
 
 export default PageDefault;
